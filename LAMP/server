@@ -1,0 +1,17 @@
+server type:
+//------------------按机箱结构来分
+    机架式服务器
+    刀片式服务器
+    塔式服务器
+    机柜服务器
+server software type:
+//-------------------常用的类型
+    文件服务器（fiel server）
+    数据服务器（database server）
+    邮件服务器（mail server）
+    网页服务器（web server）
+    FTP服务器（FTP server）
+    域名服务器（DNS server）
+    应用程序服务器（AP server）
+    代理服务器（proxy server）
+    电脑名称转换服务器（）
