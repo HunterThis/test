@@ -1,3 +1,5 @@
+//------------------------------configuration------
+
 git config user.name ""
 git config user.email 
 git config core.editor
@@ -5,12 +7,21 @@ git config core.editor
 
 git config --list
 
+//------------------------------download-------
+
 git clone [url]
 
+//------------------------------configurationDirectory-----
+
 git init
+
+//------------------------------masterFile----------
+
 git status
 
 git add     git commit (detail look picture)
 --viewPicture:    file_status_lifecycle.png
 
+git checkout <file>:     discard change in word directory 
 
+.gitignore:     ignore file
