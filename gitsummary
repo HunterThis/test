@@ -1,0 +1,16 @@
+git config user.name ""
+git config user.email 
+git config core.editor
+// if contain --global ,it's configuration for global
+
+git config --list
+
+git clone [url]
+
+git init
+git status
+
+git add     git commit (detail look picture)
+--viewPicture:    file_status_lifecycle.png
+
+
