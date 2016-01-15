@@ -27,9 +27,9 @@ git checkout <file>:     discard change in word directory
 .gitignore:     ignore file
 
 commit: commit file to storage ,then using "push" to push to repertory
+commit -a: commit all file without "add" 
 
 //------------------------------pushFile---------
 
 git push origin master:     push file to repertory
 
-............

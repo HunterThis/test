@@ -1,2 +1,2 @@
-# test
-用于熟悉github
+# learnning summary
+summary study,and familiar github
