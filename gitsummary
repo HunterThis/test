@@ -25,3 +25,11 @@ git add     git commit (detail look picture)
 git checkout <file>:     discard change in word directory 
 
 .gitignore:     ignore file
+
+commit: commit file to storage ,then using "push" to push to repertory
+
+//------------------------------pushFile---------
+
+git push origin master:     push file to repertory
+
+............
