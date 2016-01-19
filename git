@@ -1,46 +1,68 @@
-//------------------------------configuration------
+==========================================
+    "configuration"
 
+(if contain --global ,it's configuration for global)
 git config user.name ""
 git config user.email 
 git config core.editor
-// if contain --global ,it's configuration for global
 
 git config --list
 
-//------------------------------download-------
+==========================================
+    "download"
 
 git clone [url]
 
-//------------------------------configurationDirectory-----
+==========================================
+    "configuration directory"
 
 git init
 
-//------------------------------masterFile----------
+==========================================
+    "master file"
 
 git status
 
-git add     git commit (detail look picture)
---viewPicture:    
-    file_status_lifecycle.png
+git add(rm)     git commit (detail look picture)
+--viewPicture:    file_status_lifecycle.png
 
-git checkout <file>:     
-    discard change in word directory 
+git checkout <file>: (discard change in word directory )     
 
-.gitignore:     
-    add ignore file
+.gitignore: (add ignore file)     
 
-commit: 
-    commit file to storage ,then using "push" push file to repertory
+commit: (commit file to storage ,then using "push" push file to repertory) 
+    -a: 
+        commit all file without "add" 
+    -m:
+        //coming soon................
 
-commit -a: 
-    commit all file without "add" 
+log: (view commit history)
+    //coming soon................
 
-//------------------------------pushFile---------
+==========================================
+    "push file"
 
-git push origin master:     
-    push file to repertory
+git push origin master: (push file to repertory)
 
-//------------------------------branch--------
+==========================================
+    "remote repertory"
 
-git branch:
+git remote: (view remote repertory)
+    -v (verbose):
+        view clone address
+    add [short name] [URL]:
+        add a new remote repertory
+    fetch:
+        //coming soon................
+    show;
+        view repertory infromation
+    rename [used name] [new name]:
+        rename remote repertory name in local
+    rm:
+        remove remote repertory
+
+==========================================
+    "branch"
+
+git branch [branch name]:
     built a new branch
