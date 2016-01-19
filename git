@@ -33,8 +33,8 @@ git checkout <file>: (discard change in word directory )
 commit: (commit file to storage ,then using "push" push file to repertory) 
     -a: 
         commit all file without "add" 
-    -m:
-        //coming soon................
+    -m "what you want say":
+       commit illustrate 
 
 log: (view commit history)
     //coming soon................
