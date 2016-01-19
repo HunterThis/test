@@ -64,5 +64,12 @@ git remote: (view remote repertory)
 ==========================================
     "branch"
 
-git branch [branch name]:
-    built a new branch
+git branch: (view branch) 
+    [branch name]:
+        built a new branch
+    -d [branch name]:
+        delete branch
+
+git checkout: (switch to appoint branch)
+    -b:
+        create and switch a new branch
