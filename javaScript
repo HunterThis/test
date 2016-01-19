@@ -1,0 +1,78 @@
+    ""
+
+//官方定义：
+
+//我的理解：
+
+//例子：
+
+--------------------------------
+
+
+
+    "this"
+
+//官方定义：
+
+//我的理解：
+指向函数所有者(function owner)
+//例子：
+
+--------------------------------
+
+
+
+    "callback"
+
+//官方定义：
+a callback is a piece of executable code that is passed as an argument to other code which is expected to call back (execute) the argument at some convenient time
+//我的理解：
+把函数f2当做一个参数传给函数f1 并且在f1里适当的时间执行f2
+" js是单线程的,js代码就是一条线执行下去.但有时候你需要一个操作完全结束再到下一个操作,为了确保这一点就必须用回调函数.
+假如你发起一个网络请求,需要在请求到数据的时候再进行数据处理操作.如果不用回调的话,下一步操作怎么进行?如果按照一般的代码,有可能请求的数据还没返回,数据处理操作已经执行完了! "
+http://my.oschina.net/redraiment/blog/80349
+//例子：
+
+--------------------------------
+
+
+
+    "call"
+
+//官方定义：
+
+//我的理解：
+functionName1.call(functionName2,arguments):
+    将括号内的函数(functionName2)call到主函数(functionName1)中运算,且括号内函数优先运算
+
+//例子：
+function Pet(words){
+    this.words = words;
+    this.speak = function(){
+        console.log(this.words);
+        console.log(this);
+    };
+}
+
+function Dog(words){
+    Pet.call(this,words);
+    console.log(this);
+    //pet.apply(this,arguments)
+}
+
+var dog = new Dog('wang');
+
+dog.speak();
+--------------------------------
+
+
+
+    "listen"
+
+//官方定义：
+
+//我的理解：
+
+//例子：
+
+--------------------------------

@@ -1,0 +1,8 @@
+
+//quote file.so can using other files function
+var functionName = require('./sourceFileName');     
+
+//exports function ,that it can be use in other function
+exports.functionName = functionName;    
+
+
