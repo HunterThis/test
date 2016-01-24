@@ -1,1 +1,28 @@
 LAMP: linux + apache(nginx) + mysql + php
+
+LAMP install : sudo apt-get install apache2 php5 mysql-server php5-mysql
+
+introduction:
+    apache2:
+        apache is a open source web server
+
+    php5:
+        php:
+
+    mysql-server:
+
+    php5-mysql:
+
+LAMP process:
+    browser convert URL to IP address that via DNS -->  send browser request to php -->  php parse --> mysql data exechange
+
+
+
+php extension package : (sudo apt-get install php5-gd curl libcurl3 libcurl3-dev php5-curl)
+
+
+LAMP install --> filezilla install --> ssh service install --> shh service restart --> 
+logging filezilla succed
+
+mysql corel configuration is my.cnf
+php corel configuration is php.ini
