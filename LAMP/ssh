@@ -1,0 +1,35 @@
+transport file to server software : (sudo apt-get install Filezilla)
+ssh : sftp
+
+install ssh service:
+    sudo apt-get install openssh-server     //install ssh service
+    service sshd restart    //restart ssh service
+    netstat-antp|grep sshd      //view if start-up ssh service
+    start-up ssh when computer start    //coming soon......................
+
+//if can't logging ssh ,look following
+
+/*
+ssh 登陆不上问题解决
+（1）查看ip地址是否冲突
+我在单位的虚拟机ip地址是192.168.14.85，与其它机器冲突了。改成了192.168.14.83
+
+（2）关闭Ubuntu14.04的防火墙
+root@stgman-desktop:~# sudo ufw disable      #显示 防火墙在系统启动时自动禁用
+（3）Ubuntu系统上安装、启动sshd服务
+sudo apt-get install openssh-server
+sudo /etc/init.d/ssh restart  
+
+
+（4）ssh还不能登录上，就修改sshd的默认配置
+ssh出现permission denied (publickey)问题:
+
+修改/etc/ssh/sshd-config文件.
+
+PubkeyAuthentication yes修改为no
+
+AuthorizedKeysFile .ssh/authorized_keys前面加上#屏蔽掉，
+( 5 ) 重新启动 
+
+原文 ：http://blog.sina.com.cn/s/blog_5f435c130102v6pv.html
+*/

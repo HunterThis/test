@@ -1,0 +1,9 @@
+su : (switch user)
+sudo : (switch user do) 
+sudo passwd root : (change super user password)
+sudo apt-get update : (update local software source list)
+
+general logging is using general account, then using "sudo" that can get super user power
+temporay, and complete order.
+
+/etc : ubuntu system configuration directory
