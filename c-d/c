@@ -1,0 +1,70 @@
+.c --> .i --> .s --> .o --> executable file 
+preprocess --> compile --> assembly --> link
+
+#define : macro in preprocess stage 
+    e.g :
+        #define add(a,b) (a+b)
+
+        #define M int main(
+        M){
+            printf("hello,world\n");
+        }
+
+typedef : type define
+    e.g:
+        typedef int tni;
+        int *p;
+        p q = NULL;
+        int * q = NULL;
+
+different in typedef and macro
+
+size_t : typedef unsigned long size_t
+
+*a :
+    symbol a value
+&a :
+    symbol a address
+
+struct : like c#;
+    e.g :
+        struct weapon{
+            char name[20];
+            int atk;
+            int price;
+        };
+        struct weapon_1 = {"weapon_name", 100, 200};
+        printf("%s\n,%d\n", weapon_1.name,++weapon_1.price);
+
+    32bit : 2^32 bit
+    64bit : 2^64 bit
+
+gdb tool : gcc -g [file name] --> gdb [executable]
+    break :
+        add break
+    start [line] :
+        start debug
+    p [var] :
+        print var value
+    n :
+        next line
+    s :
+        enter function
+    f :
+        quit function
+    l :
+        list current function
+    bt :
+        view function stack and heap
+    q :
+        quit debug
+
+program status record in stack
+var is symbol
+pointer is address in fact
+pointer occupy space :
+    32bit pointer : occupy 4 bit
+    64bit pointer : occupy 8 bit
+
+int *p=&a; p+=3; --> p+=3 not plus 3 ,but push 3 unit(unit size denpend on pointer occupy spage, such as int is occupy 4 ) 
+
