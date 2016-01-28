@@ -1,0 +1,6 @@
+stop mysql() --> creat new directory --> change new directory owner to mysql --> change new directory mode to 700 
+--> cp file to new directory -->configuration mysql default directory
+
+/etc/apparmor.d/usr.sbin.mysqld
+sudo service apparmor reload
+sudo service mysql start

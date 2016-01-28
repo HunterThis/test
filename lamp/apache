@@ -1,0 +1,25 @@
+step1:  //change follwing file
+
+    new ubuntu server Apache default web file under "var/www/html",if you want change address that change directory 
+    update follwing file"/etc/apache2/sites-available/000-default"  and change this two value "DocumentRoot && Directory"
+    if not contain <Directory> ,add follwing paragraphs
+    
+        //<Directory /wwwroot/video/>
+    
+        //            Options Indexes FollowSymLinks MultiViews
+    
+        //            AllowOverride All
+    
+        //            Require all granted
+    
+        //</Directory>
+
+    add "ServerName [your website address]"
+
+step2:  //make link to sites-enable 
+
+    sudo ln -s [new configuration file] ../sites-enable/[new configuration]
+
+step3:  //restart apache2 service
+    
+    sudo service apache2 restart

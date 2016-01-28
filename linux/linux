@@ -7,3 +7,7 @@ general logging is using general account, then using "sudo" that can get super u
 temporay, and complete order.
 
 /etc : ubuntu system configuration directory
+
+chown : change owner
+chgrp : change group
+chmod : change mode

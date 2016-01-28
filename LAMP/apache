@@ -1,4 +1,0 @@
-new ubuntu server Apache default web file under "var/www/html",if you want change address that update value in
-"/etc/apache2/sites-enabled/000-default"  DocumentRoot.
-
-virtual-host
