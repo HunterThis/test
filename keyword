@@ -1,7 +1,21 @@
 binary file install
-morse code application
-mZavascript linsten event
+javascript linsten event
 github application
 how to judge a front end good or bad
 insert cheerio for nodejs (it's a nodejs repertory like jquery)
 apparmor
+if file is .html ,then input "<" will output "<>"
+
+
+""""""""""""""""""""""""""""""""""""""""""
+            "colg"
+""""""""""""""""""""""""""""""""""""""""""
+1 red name system,and remark area 
+2 black name system 
+3 auto fold sign,and will appear when mouse move up to sign area
+
+
+""""""""""""""""""""""""""""""""""""""""""
+        "morse code application"
+""""""""""""""""""""""""""""""""""""""""""
+input word and will output morse code
