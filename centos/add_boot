@@ -1,26 +1,29 @@
-关键字： centos添加引导
+
+step1:
+    vim  /boot/grub2/grub.cfg
 
 
-刚出现了CentOS 7正式版，笔者便安装尝试，发现和REDHAT 7一样，Grub2不能正确引导windows分区，解决方法很简单
-vim  /boot/grub2/grub.cfg
-在### END /etc/grub.d/00_header ###之后添加：
-### BEGIN /etc/grub.d/30_os-prober ###
 
-menuentry 'Windows 8 (loader) (on /dev/sda1)' --class windows --class os $menuentry_id_option 'osprober-chain-140E68540E6830C2' {
+step2:
+    ### BEGIN /etc/grub.d/30_os-prober ###
+    
+    menuentry 'system name ' --class windows --class os $menuentry_id_option 'xxxxxxxxxxxxxxxxxxxxxxxxx' {
+    
+    insmod part_msdos
+    
+    insmod ntfs
+    
+    set root='hd0,msdos1'
+    
+    chainloader +1
+    
+    }
+    
+    ### END /etc/grub.d/30_os-prober ###
 
-insmod part_msdos
+注意：
+    1 set root后面的要按照实际情况填写
+    2 xxxxxxxxxxxxxxxxxxxxxxxxxx为系统所在分区的uuid//sudo blkid 查看列出所有磁盘的uuid
 
-insmod ntfs
 
-set root='hd0,msdos1'
 
-chainloader +1
-
-}
-
-### END /etc/grub.d/30_os-prober ###
-
-即可，开机时就会出现win8的系统选单
-注意：set root后面的要按照实际情况填写
----------------------------------
-grub.cfg详解 : http://blog.csdn.net/lazyclough/article/details/5790385
